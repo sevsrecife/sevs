@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIE - Centro de Inteligência Epidemiológica</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div>
+                    <h1 class="h5 mb-0 text-white fw-bold">CIE RECIFE</h1>
+                    <span class="d-block" style="font-size: 0.75rem; color: #a1b8db;">Inteligência Epidemiológica</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#atividades">Atividades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paineis">Painéis</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-restricted ms-lg-3 px-4 py-2 rounded-pill fw-semibold" href="gestao.html">
+                            <i class="bi bi-lock-fill me-1"></i>Acesso Restrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-section text-center d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold text-white mb-4">Centro de Inteligência Epidemiológica</h2>
+                    <p class="lead text-light mb-5 px-md-4">
+                        Monitoramento contínuo e análise estratégica de dados para garantir uma resposta rápida e eficaz a emergências de saúde pública, baseada em evidências científicas e metodologias avançadas.
+                    </p>
+                    <a href="#paineis" class="btn btn-accent-orange btn-lg rounded-pill px-5 shadow-sm fw-semibold">
+                        Acessar Painéis de Monitoramento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="atividades" class="py-5 bg-body-custom">
+        <div class="container text-center py-4">
+            <h3 class="fw-bold mb-5 text-primary-dark">Nossas Atividades</h3>
+            <div class="row g-4 justify-content-center activity-row">
+                
+                <div class="col-md-3 col-sm-6 activity-col">
+                    <div class="card h-100 border-0 activity-card bg-white">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center">
+                            <div class="icon-wrapper mb-3 text-primary-dark">
+                                <i class="bi bi-bar-chart-line fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-primary-dark">Análise de Dados</h5>
+                            <p class="card-text text-muted small mt-2">Relacionamento e processamento de bases do SINAN, SIM e outros sistemas de vigilância.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 activity-col">
+                    <div class="card h-100 border-0 activity-card bg-white">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center">
+                            <div class="icon-wrapper mb-3 text-primary-dark">
+                                <i class="bi bi-laptop fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-primary-dark">Modelagens Estatísticas</h5>
+                            <p class="card-text text-muted small mt-2">Detecção precoce de alterações nos padrões epidemiológicos territoriais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 activity-col">
+                    <div class="card h-100 border-0 activity-card bg-white">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center">
+                            <div class="icon-wrapper mb-3 text-primary-dark">
+                                <i class="bi bi-bug fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-primary-dark">Vigilância Ambiental</h5>
+                            <p class="card-text text-muted small mt-2">Acompanhamento de vetores e análise de ciclos biológicos em campo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 activity-col">
+                    <div class="card h-100 border-0 activity-card bg-white">
+                        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center">
+                            <div class="icon-wrapper mb-3 text-primary-dark">
+                                <i class="bi bi-gear fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-primary-dark">Apoio à Gestão</h5>
+                            <p class="card-text text-muted small mt-2">Desenvolvimento de produtos para qualificação e direcionamento de políticas públicas.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="paineis" class="py-5 bg-white border-top">
+        <div class="container py-4">
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5">
+                <h3 class="fw-bold text-primary-dark m-0 mb-3 mb-md-0">Painéis de Monitoramento</h3>
+                <div class="input-group w-auto shadow-sm rounded-pill overflow-hidden border border-primary-light border-opacity-25">
+                    <span class="input-group-text bg-white border-0"><i class="bi bi-search text-muted"></i></span>
+                    <input type="text" id="filterPaineis" class="form-control border-0 shadow-none" placeholder="Filtrar painéis...">
+                </div>
+            </div>
+
+            <div class="panel-group shadow-sm p-4 rounded-4 mb-4 border-top border-primary-dark border-4" style="background-color: var(--body-bg);">
+                <h5 class="text-primary-dark fw-bold mb-4 text-center"><i class="bi bi-heart-pulse me-2"></i>Doenças e Agravos de Saúde</h5>
+                <div class="d-flex flex-wrap justify-content-center gap-3 panel-container">
+                    <a href="dashboard.html?tema=arboviroses" class="btn btn-panel"><i class="bi bi-bug text-accent-orange me-2"></i>Arboviroses (Dengue, Zika)</a>
+                    <a href="dashboard.html?tema=srag" class="btn btn-panel"><i class="bi bi-lungs text-accent-orange me-2"></i>Síndrome Respiratória (SRAG)</a>
+                    <a href="dashboard.html?tema=tuberculose" class="btn btn-panel"><i class="bi bi-activity text-accent-orange me-2"></i>Tuberculose</a>
+                    <a href="dashboard.html?tema=sifilis" class="btn btn-panel"><i class="bi bi-gender-ambiguous text-accent-orange me-2"></i>Sífilis e ISTs</a>
+                    <a href="dashboard.html?tema=dda" class="btn btn-panel"><i class="bi bi-droplet text-accent-orange me-2"></i>Doenças Diarreicas Agudas</a>
+                    <a href="dashboard.html?tema=violencia" class="btn btn-panel"><i class="bi bi-exclamation-triangle text-accent-orange me-2"></i>Violência Interpessoal</a>
+                    <a href="dashboard.html?tema=mpox" class="btn btn-panel"><i class="bi bi-virus text-accent-orange me-2"></i>Mpox</a>
+                </div>
+            </div>
+
+            <div class="panel-group shadow-sm p-4 rounded-4 mb-4 border-top border-primary-light border-4" style="background-color: var(--body-bg);">
+                <h5 class="text-primary-light fw-bold mb-4 text-center"><i class="bi bi-clipboard-data me-2"></i>Apoio à Gestão</h5>
+                <div class="d-flex flex-wrap justify-content-center gap-3 panel-container">
+                    <a href="dashboard.html?tema=dados-populacionais" class="btn btn-panel"><i class="bi bi-people text-accent-blue me-2"></i>Dados Populacionais</a>
+                    <a href="dashboard.html?tema=epidemiologia" class="btn btn-panel"><i class="bi bi-bar-chart-steps text-accent-blue me-2"></i>Epidemiologia e Desigualdades</a>
+                    <a href="dashboard.html?tema=pesquisas" class="btn btn-panel"><i class="bi bi-search text-accent-blue me-2"></i>Painel de Pesquisas</a>
+                    <a href="dashboard.html?tema=previne-brasil" class="btn btn-panel"><i class="bi bi-graph-up-arrow text-accent-blue me-2"></i>Indicadores Previne Brasil</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-4 panel-group">
+                    <div class="shadow-sm p-4 rounded-4 h-100 border-top border-secondary border-4" style="background-color: var(--body-bg);">
+                        <h5 class="text-secondary fw-bold mb-4 text-center"><i class="bi bi-droplet-half me-2"></i>Vigilância Laboratorial</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 panel-container">
+                            <a href="dashboard.html?tema=exames-arboviroses" class="btn btn-panel"><i class="bi bi-virus2 text-secondary me-2"></i>Exames de Arboviroses</a>
+                            <a href="dashboard.html?tema=virus-respiratorios" class="btn btn-panel"><i class="bi bi-lungs-fill text-secondary me-2"></i>Vírus Respiratórios</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4 panel-group">
+                    <div class="shadow-sm p-4 rounded-4 h-100 border-top border-accent-blue border-4" style="background-color: var(--body-bg);">
+                        <h5 class="text-accent-blue fw-bold mb-4 text-center"><i class="bi bi-tree me-2"></i>Vigilância Ambiental e Genômica</h5>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 panel-container">
+                            <a href="dashboard.html?tema=vigiagua" class="btn btn-panel"><i class="bi bi-water text-accent-blue me-2"></i>Qualidade da Água (Vigiagua)</a>
+                            <a href="dashboard.html?tema=genomica-covid" class="btn btn-panel"><i class="bi bi-virus text-accent-blue me-2"></i>Genômica Covid-19</a>
+                            <a href="dashboard.html?tema=ovitrampas" class="btn btn-panel"><i class="bi bi-geo-alt text-accent-blue me-2"></i>Monitoramento de Ovitrampas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-4 border-top" style="background-color: #ebf1f7;">
+        <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center gap-4 text-center text-md-start">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-telephone-fill fs-1 me-3" style="color: var(--primary-dark);"></i>
+                <h3 class="fw-bold mb-0" style="font-size: 3rem; color: var(--primary-dark);">136</h3>
+            </div>
+            <div class="border-start border-2 px-md-3 d-none d-md-block" style="height: 60px; border-color: var(--primary-light) !important;"></div>
+            <div>
+                <h5 class="fw-bold mb-1" style="color: var(--primary-dark);">Ouvidoria-Geral do SUS</h5>
+                <p class="mb-0 text-dark small fw-medium">Teleatendente: de segunda a sexta-feira, das 8h às 20h, e aos sábados, das 8h às 18h.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary-dark text-white py-4 border-top" style="border-color: var(--accent-orange) !important; border-top-width: 4px !important;">
+        <div class="container text-center">
+            <h6 class="fw-bold mb-2">Secretaria de Saúde</h6>
+            <p class="small text-light mb-0">Centro de Inteligência Epidemiológica (CIE)</p>
+            <p class="small mt-3" style="color: #a1b8db;">© 2026 Todos os direitos reservados. Desenvolvido para a Saúde Pública.</p>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

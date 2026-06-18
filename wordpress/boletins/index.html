@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletins Epidemiológicos - CIEVS Recife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-body-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <i class="bi bi-arrow-left fs-4 me-2 text-primary-dark transition-icon"></i>
+                <span class="h6 mb-0 fw-bold text-primary-dark">Voltar ao CIEVS</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+
+        <div class="text-center mb-5">
+            <span class="badge bg-primary-light text-white mb-2 px-3 py-2 rounded-pill">ACERVO TÉCNICO</span>
+            <h1 class="fw-extrabold text-primary-dark display-6 mt-2">Boletins Epidemiológicos</h1>
+            <p class="text-muted mx-auto" style="max-width: 560px;">
+                Consolidados analíticos periódicos sobre os cenários de saúde do município, organizados por agravo de notificação.
+            </p>
+        </div>
+
+        <!-- Filtro Alfabético -->
+        <div class="card border-0 shadow-sm rounded-4 mb-4">
+            <div class="card-body p-3 p-md-4">
+                <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+                    <i class="bi bi-funnel-fill text-primary-light fs-5"></i>
+                    <span class="fw-bold text-primary-dark small text-uppercase letter-spacing-1">Filtrar por agravo</span>
+                    <span id="resultado-contador" class="badge bg-primary-light text-white ms-auto rounded-pill px-3"></span>
+                </div>
+
+                <div id="filtro-alfabetico" class="d-flex flex-wrap gap-1" role="group" aria-label="Filtro alfabético de agravos"></div>
+            </div>
+        </div>
+
+        <!-- Estado vazio -->
+        <div id="estado-vazio" class="text-center py-5 d-none">
+            <i class="bi bi-journal-x text-muted" style="font-size: 3rem;"></i>
+            <p class="text-muted mt-3 mb-0">Nenhum boletim encontrado para esta letra.</p>
+        </div>
+
+        <!-- Lista de Boletins -->
+        <div id="lista-boletins" class="list-group shadow-sm rounded-4"></div>
+
+    </main>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

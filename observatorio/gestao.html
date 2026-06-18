@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Estratégica - CIE Recife</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="restricted-area">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-dark fixed-top border-bottom border-warning border-opacity-25">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div>
+                    <h1 class="h5 mb-0 text-white fw-bold">CIE <span class="text-warning">GESTÃO</span></h1>
+                    <span class="d-block text-warning" style="font-size: 0.70rem; letter-spacing: 1px;">AMBIENTE RESTRITO</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item text-white me-3 small d-none d-md-block">
+                        <i class="bi bi-person-circle me-1 text-warning"></i> Usuário: Gestor_Sede
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-danger btn-sm px-3 rounded-pill text-white fw-bold" href="index.html">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section restricted-hero text-center d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold">SALA DE SITUAÇÃO E CONTROLE</div>
+                    <h2 class="display-5 fw-bold text-white mb-4">Inteligência de Gestão Estratégica</h2>
+                    <p class="lead text-light mb-0">
+                        Acesso exclusivo para tomada de decisão técnica. Este ambiente contém dados sensíveis protegidos pela LGPD, incluindo monitoramento nominal, estoques críticos e alocação de recursos humanos em tempo real.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paineisGestao" class="py-5">
+        <div class="container py-4">
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="panel-group shadow p-4 rounded-4 bg-white border-top border-warning border-4 h-100">
+                        <h5 class="text-primary-dark fw-bold mb-4"><i class="bi bi-box-seam me-2 text-warning"></i>Recursos e Insumos Críticos</h5>
+                        <div class="list-group list-group-flush">
+                            <a href="dashboard.html?tema=estoque-vacinas" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0 border-bottom">
+                                <div><h6 class="mb-0 fw-bold">Estoque Central de Imunobiológicos</h6><small class="text-muted">Nível de estoque por lote e validade</small></div>
+                                <i class="bi bi-chevron-right text-warning"></i>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0 border-bottom">
+                                <div><h6 class="mb-0 fw-bold">Logística de Insumos (Arboviroses)</h6><small class="text-muted">Distribuição de inseticidas e kits laboratoriais</small></div>
+                                <i class="bi bi-chevron-right text-warning"></i>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0">
+                                <div><h6 class="mb-0 fw-bold">Execução Orçamentária SVSA</h6><small class="text-muted">Acompanhamento de fundos e convênios</small></div>
+                                <i class="bi bi-chevron-right text-warning"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="panel-group shadow p-4 rounded-4 bg-white border-top border-primary-light border-4 h-100">
+                        <h5 class="text-primary-dark fw-bold mb-4"><i class="bi bi-people-fill me-2 text-primary-light"></i>Monitoramento de Equipes</h5>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0 border-bottom">
+                                <div><h6 class="mb-0 fw-bold">Produtividade Agentes de Endemias</h6><small class="text-muted">Roteiros de campo e cobertura de imóveis</small></div>
+                                <i class="bi bi-chevron-right text-primary-light"></i>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0 border-bottom">
+                                <div><h6 class="mb-0 fw-bold">Escalas Técnicas CIE</h6><small class="text-muted">Plantão 24h e resposta a eventos</small></div>
+                                <i class="bi bi-chevron-right text-primary-light"></i>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3 border-0">
+                                <div><h6 class="mb-0 fw-bold">Capacitação e Treinamentos</h6><small class="text-muted">Status de formação das equipes distritais</small></div>
+                                <i class="bi bi-chevron-right text-primary-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="p-4 rounded-4 text-white shadow" style="background: linear-gradient(90deg, #12346b 0%, #1e73be 100%);">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h4 class="fw-bold"><i class="bi bi-shield-lock-fill me-2 text-warning"></i>Módulo de Vigilância Nominal</h4>
+                                <p class="mb-0 opacity-75">Acesso a prontuários, endereços e identificação individual de casos para investigação de óbitos e surtos ativos. O acesso a este módulo gera log de auditoria imediato.</p>
+                            </div>
+                            <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                <a href="#" class="btn btn-warning fw-bold px-4 py-2 rounded-pill">Acessar Investigação</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-primary-dark text-white py-4 border-top border-warning border-4">
+        <div class="container text-center">
+            <h6 class="fw-bold mb-2">Secretaria de Saúde</h6>
+            <p class="small mb-0">Sistema de Inteligência Epidemiológica do Recife - Módulo de Gestão</p>
+            <p class="small opacity-50 mt-2">© 2026 - Uso exclusivo institucional.</p>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
