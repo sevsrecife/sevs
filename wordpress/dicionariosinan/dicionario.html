@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionários de Dados — Agravos SINAN — SEVS Recife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="dicionario.css">
+</head>
+<body class="bg-body-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top transition-nav" aria-label="Navegação Dicionário de Dados">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../../vigepidemiologica/epidemiologia.html">
+                <i class="bi bi-arrow-left fs-5 text-accent-orange"></i>
+                <div class="border-start border-2 ps-2" style="border-color: #dee2e6 !important;">
+                    <span class="d-block fw-bold text-primary-dark" style="font-size: 0.9rem; line-height: 1.2;">Vig. Epidemiológica</span>
+                    <span class="d-block text-muted" style="font-size: 0.68rem;">SEVS Recife</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="position-relative overflow-hidden bg-body-custom border-bottom d-flex align-items-center" style="min-height: 32vh; padding-top: 5rem;">
+        <div class="hero-bg-pattern"></div>
+        <div class="container position-relative py-4">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="icon-wrapper mx-auto mb-4 text-primary-dark bg-white shadow-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                        <i class="bi bi-database fs-2"></i>
+                    </div>
+                    <span class="badge text-white mb-3 px-3 py-2 rounded-pill fw-bold" style="background-color: var(--accent-orange);">ACERVO TÉCNICO — SINAN</span>
+                    <h1 class="display-6 fw-extrabold text-primary-dark mb-3">Dicionários de Dados</h1>
+                    <p class="lead text-muted mx-auto" style="max-width: 580px;">
+                        Documentação técnica das fichas de notificação do SINAN NET para os agravos de notificação compulsória. Utilize a busca para localizar um agravo específico.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agravos" class="py-5 bg-white">
+        <div class="container py-4">
+
+            <div class="card border-0 shadow-sm rounded-4 mb-4">
+                <div class="card-body p-3 p-md-4">
+                    <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+                        <i class="bi bi-funnel-fill text-accent-orange fs-5"></i>
+                        <span class="fw-bold text-primary-dark small text-uppercase" style="letter-spacing: 0.05em;">Filtrar por letra</span>
+                        <span id="resultado-contador" class="badge text-white ms-auto rounded-pill px-3" style="background-color: var(--accent-orange);"></span>
+                    </div>
+                    <div id="filtro-alfabetico" class="d-flex flex-wrap gap-1" role="group" aria-label="Filtro alfabético de agravos"></div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-4 mb-4">
+                <div class="card-body p-3">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" id="busca-agravo" class="form-control border-0 shadow-none" placeholder="Buscar agravo pelo nome...">
+                    </div>
+                </div>
+            </div>
+
+            <div id="estado-vazio" class="text-center py-5 d-none">
+                <i class="bi bi-file-earmark-x text-muted" style="font-size: 3rem;"></i>
+                <p class="text-muted mt-3 mb-0">Nenhum dicionário encontrado para este filtro.</p>
+            </div>
+
+            <div id="lista-agravos" class="list-group shadow-sm rounded-4"></div>
+        </div>
+    </section>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="dicionario.js"></script>
+</body>
+</html>
