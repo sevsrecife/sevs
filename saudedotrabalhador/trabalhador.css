@@ -127,3 +127,23 @@ body {
 }
 
 .hover-white:hover { color: white !important; }
+
+/* ==========================================
+   Saúde do Trabalhador — hero warm laranja
+   ========================================== */
+.hero-warm {
+    background: linear-gradient(150deg, rgba(219,64,10,0.08) 0%, var(--body-bg) 55%) !important;
+}
+.hero-warm-strip {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 5px;
+    background: linear-gradient(to bottom, var(--accent-orange) 0%, rgba(219,64,10,0.2) 100%);
+    border-radius: 0 3px 3px 0;
+    z-index: 1;
+}
+.hero-warm .badge.bg-primary-light {
+    background: rgba(219,64,10,0.12) !important;
+    color: var(--accent-orange) !important;
+}
+.trab-card { border-top-color: var(--accent-orange) !important; }

@@ -127,3 +127,41 @@ body {
 }
 
 .hover-white:hover { color: white !important; }
+
+/* ==========================================
+   Vigilância Sanitária — hero dark navy
+   ========================================== */
+.hero-dark {
+    background: linear-gradient(145deg, #091829 0%, var(--primary-dark) 100%) !important;
+}
+.hero-dark .hero-bg-pattern {
+    background-image: radial-gradient(rgba(255,255,255,0.45) 1px, transparent 1px) !important;
+    opacity: 0.07 !important;
+}
+.hero-dark .badge.bg-primary-light {
+    background: rgba(255,255,255,0.16) !important;
+    border: 1px solid rgba(255,255,255,0.28) !important;
+    color: rgba(255,255,255,0.92) !important;
+}
+.hero-dark .text-primary-dark { color: white !important; }
+.hero-dark .text-muted { color: rgba(255,255,255,0.65) !important; }
+.hero-dark .icon-wrapper {
+    background: rgba(255,255,255,0.1) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+.hero-dark .btn-accent-orange {
+    box-shadow: 0 4px 15px rgba(219,64,10,0.35) !important;
+}
+.hero-dark .btn-outline-primary-dark {
+    border-color: rgba(255,255,255,0.5) !important;
+    color: rgba(255,255,255,0.9) !important;
+    background: transparent !important;
+}
+.hero-dark .btn-outline-primary-dark:hover {
+    background: white !important;
+    color: var(--primary-dark) !important;
+    border-color: white !important;
+    transform: translateY(-2px);
+}
+.sanitaria-card { border-top-color: var(--accent-orange) !important; }

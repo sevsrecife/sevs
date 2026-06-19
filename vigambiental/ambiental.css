@@ -127,3 +127,29 @@ body {
 }
 
 .hover-white:hover { color: white !important; }
+
+/* ==========================================
+   Vigilância Ambiental — hero split verde
+   ========================================== */
+:root { --page-green: #16a34a; }
+.hero-split { background: #ffffff !important; }
+.hero-split .hero-bg-pattern {
+    background-image: radial-gradient(var(--page-green) 1px, transparent 1px) !important;
+    opacity: 0.04 !important;
+}
+.hero-split .badge.bg-primary-light {
+    background: rgba(22, 163, 74, 0.14) !important;
+    color: var(--page-green) !important;
+}
+.hero-feat-card {
+    border-radius: 1rem;
+    transition: all 0.25s ease;
+    border-left: 3px solid transparent !important;
+}
+.hero-feat-card:hover {
+    border-left-color: var(--page-green) !important;
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(22, 163, 74, 0.1) !important;
+}
+.ambiental-card { border-top-color: var(--page-green) !important; }
+.text-page-green { color: var(--page-green) !important; }

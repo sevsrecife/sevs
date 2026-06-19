@@ -127,3 +127,27 @@ body {
 }
 
 .hover-white:hover { color: white !important; }
+
+/* ==========================================
+   Vigilância Epidemiológica — diferenciação
+   ========================================== */
+#inicio::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(to right, var(--accent-blue), var(--primary-light), var(--accent-blue));
+    opacity: 0.6;
+}
+.epi-stat-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(74, 142, 255, 0.12);
+    color: var(--primary-dark);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border: 1px solid rgba(74, 142, 255, 0.2);
+}
